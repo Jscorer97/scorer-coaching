@@ -40,32 +40,6 @@ h1, h2, h3 {
   background-color: #5a7481;
 }
 
-.service-item {
-  margin-bottom: 20px;
-}
-
-.service-description {
-  display: none;
-}
-
-.toggle-description {
-  margin-top: 10px;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.testimonials-carousel {
-  display: flex;
-  justify-content: center;
-}
-
-.testimonial {
-  padding: 30px;
-  background: #ffffff;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 footer {
   background: #2c3e50; /* Footer color */
   color: #ffffff;
@@ -87,17 +61,12 @@ footer .social-links a:hover {
   text-decoration: underline;
 }
 
-/* Color and Spacing Breaks for Section */
-.logo-section {
-  background-color: #dde3eb; /* Slightly darker shade */
-}
-
+/* Hero Section */
 .hero {
-  background-color: #2c3e50; /* Hero section color now matches the footer */
-  color: #ffffff; /* White text to contrast with dark background */
+  background-color: #2c3e50; /* Hero section color */
+  color: #ffffff;
   text-align: center;
-  padding: 80px 20px 40px; /* Adjusted padding to prevent overlap */
-  margin-bottom: 0;
+  padding: 80px 20px 40px;
 }
 
 .hero h1 {
@@ -105,23 +74,37 @@ footer .social-links a:hover {
   color: #ffffff; /* White text color for the main heading */
 }
 
+/* About Section */
 .about-section {
   background-color: #ffffff;
+  color: #333;
 }
 
+/* Services Section */
 .services-section {
-  background-color: #e2e7eb; /* Slightly darker light blue */
+  background-color: #e2e7eb; /* Light blue background */
 }
 
-.testimonials-section {
-  background-color: #d5dde4; /* More pronounced light gray */
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.contact-section {
-  background-color: #f4f9fc; /* Slightly deeper off-white */
+.service-item {
+  width: 30%;
+  text-align: center;
 }
 
-/* Contact Form Styling (Vertical Layout) */
+.service-item img {
+  width: 100%;
+  max-width: 250px; /* Adjust image size */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Contact Form */
 .contact-form label {
   display: block;
   margin-bottom: 10px;
@@ -150,44 +133,26 @@ footer .social-links a:hover {
   background-color: #5a7481;
 }
 
-/* Layout for Services */
-.services-list {
-  display: flex; /* Align the services horizontally */
-  justify-content: space-between; /* Space out the services */
-  flex-wrap: wrap; /* Allow wrapping if the screen is smaller */
-  gap: 20px; /* Space between each service item */
-}
-
-.service-item {
-  width: 30%; /* Make each service item take up 30% of the container */
-  text-align: center;
-}
-
 /* Mobile-Friendly Design */
 @media screen and (max-width: 768px) {
   .container {
     width: 90%;
   }
 
-  .hero {
-    text-align: center;
-    padding: 60px 20px 20px; /* Adjusted padding for mobile */
-  }
-
   .services-list {
-    display: block; /* Stack services vertically on smaller screens */
-  }
-
-  .service-item {
-    margin-bottom: 30px;
-    width: 100%; /* Service items take up full width on mobile */
-  }
-
-  .testimonials-carousel {
     display: block;
   }
 
-  .contact-form {
-    margin-top: 30px;
+  .service-item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .hero {
+    padding: 60px 20px 20px;
+  }
+
+  .cta-btn {
+    padding: 10px 20px;
   }
 }
