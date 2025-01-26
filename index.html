@@ -9,18 +9,6 @@
   <meta name="author" content="Jamie Scorer">
   <title>Jamie Scorer Personal Training</title>
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'YOUR_TRACKING_ID');
-  </script>
-
-  <!-- Slick Carousel CSS -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,8 +16,7 @@
   <!-- Logo Section -->
   <section id="logo" class="section logo-section">
     <div class="container">
-      <!-- Update this link with the path to your logo -->
-      <img src="https://github.com/Jscorer97/scorer-coaching-landing-page/blob/main/PT%20logo.png" alt="Jamie Scorer Personal Training Logo" class="logo">
+      <img src="https://via.placeholder.com/200x100.png?text=Your+Logo" alt="Jamie Scorer Personal Training Logo" class="logo">
     </div>
   </section>
 
@@ -99,6 +86,31 @@
     </div>
   </section>
 
+  <!-- FAQ Section -->
+  <section id="faq" class="section faq-section">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <button class="faq-question">What are your training rates?</button>
+        <div class="faq-answer">
+          <p>Our rates vary based on the type of training and the frequency of sessions. Please contact me for a personalized quote.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do you offer online training?</button>
+        <div class="faq-answer">
+          <p>Yes! I offer personalized online training programs and virtual sessions. Reach out to discuss the best option for you!</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I train with you if I’m a beginner?</button>
+        <div class="faq-answer">
+          <p>Absolutely! I specialize in helping beginners and will guide you through every step of the process to ensure your success.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact Form Section -->
   <section id="contact" class="section contact-section">
     <div class="container">
@@ -131,22 +143,6 @@
     </div>
   </footer>
 
-  <!-- Slick Carousel JS -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
-
-  <!-- JavaScript for toggling description -->
   <script src="script.js"></script>
-  <script>
-    // Initialize Slick Carousel for testimonials
-    $(document).ready(function(){
-      $('.testimonials-carousel').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000
-      });
-    });
-  </script>
 </body>
 </html>
