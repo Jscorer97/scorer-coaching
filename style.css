@@ -1,4 +1,4 @@
-/* General Reset and Styling */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,162 +6,348 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  background-color: #f8f8f8;
   color: #333;
+  background-color: #f9f9f9;
 }
 
+/* Container */
 .container {
-  width: 80%;
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 2rem 0;
 }
 
-section {
-  padding: 60px 0;
-}
-
-h1, h2, h3 {
-  color: #333; /* Default color for headings */
-}
-
-.cta-btn {
-  background-color: #6c8e9f;
-  color: white;
-  padding: 12px 25px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-  display: inline-block;
-}
-
-.cta-btn:hover {
-  background-color: #5a7481;
-}
-
-footer {
-  background: #2c3e50; /* Footer color */
-  color: #ffffff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-footer .social-links {
-  margin-top: 10px;
-}
-
-footer .social-links a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-footer .social-links a:hover {
-  text-decoration: underline;
-}
-
-/* Hero Section */
+/* Header Section */
 .hero {
-  background-color: #2c3e50; /* Hero section color */
-  color: #ffffff;
+  background-color: #333;
+  color: #fff;
+  padding: 4rem 0;
   text-align: center;
-  padding: 80px 20px 40px;
 }
 
 .hero h1 {
-  margin-bottom: 20px;
-  color: #ffffff; /* White text color for the main heading */
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #ff5a5f;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #d84e51;
+}
+
+/* Logo Section */
+.logo-section {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
 }
 
 /* About Section */
 .about-section {
-  background-color: #ffffff;
-  color: #333;
+  background-color: #fff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 /* Services Section */
 .services-section {
-  background-color: #e2e7eb; /* Light blue background */
+  background-color: #e5e5e5;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.services-section p {
+  font-size: 1.1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 .services-list {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
 }
 
 .service-item {
-  width: 30%;
-  text-align: center;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .service-item img {
   width: 100%;
-  max-width: 250px; /* Adjust image size */
   height: auto;
-  display: block;
-  margin: 0 auto;
+  border-radius: 5px;
+  margin-bottom: 1rem;
 }
 
-/* Contact Form */
+.service-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-item p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-item .toggle-description {
+  background: none;
+  border: none;
+  color: #ff5a5f;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.service-item .buy-btn {
+  background-color: #ff5a5f;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.service-item .buy-btn:hover {
+  background-color: #d84e51;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #fff;
+  padding: 4rem 0;
+}
+
+.testimonials-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.testimonials-carousel {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonial blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.testimonial p {
+  font-weight: bold;
+}
+
+/* FAQ Section */
+.faq-section {
+  background-color: #f9f9f9;
+  padding: 4rem 0;
+}
+
+.faq-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.faq-item {
+  background-color: #fff;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 1.25rem;
+  background-color: #ff5a5f;
+  color: white;
+  text-align: left;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #d84e51;
+}
+
+.faq-answer {
+  padding: 1rem;
+  background-color: #f1f1f1;
+  display: none;
+  font-size: 1rem;
+}
+
+.faq-answer.active {
+  display: block;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #fff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
 .contact-form label {
   display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
+  padding: 1rem;
+  margin-bottom: 1rem;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
 
 .contact-form button {
-  padding: 12px 25px;
-  background-color: #6c8e9f;
-  color: white;
-  border: none;
+  background-color: #ff5a5f;
+  padding: 1rem 2rem;
   border-radius: 5px;
+  color: white;
+  font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-  background-color: #5a7481;
+  background-color: #d84e51;
 }
 
-
-/* Logo Styling */
-.logo {
-  width: 150px;  /* Adjust the size of your logo */
-  height: auto;   /* Maintain aspect ratio */
-  display: block;
-  margin: 0 auto; /* Center the logo */
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
 }
 
-/* Mobile-Friendly Design */
-@media screen and (max-width: 768px) {
-  .container {
-    width: 90%;
-  }
+.footer p {
+  margin-bottom: 1rem;
+}
 
+.footer .social-links a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.footer .social-links a:hover {
+  color: #ff5a5f;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
   .services-list {
-    display: block;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .service-item {
-    width: 100%;
-    margin-bottom: 30px;
+  .services-item {
+    margin-bottom: 2rem;
   }
 
-  .hero {
-    padding: 60px 20px 20px;
+  .faq-item {
+    margin-bottom: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
   }
 
   .cta-btn {
-    padding: 10px 20px;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
   }
 }
