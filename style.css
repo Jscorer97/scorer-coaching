@@ -133,6 +133,15 @@ footer .social-links a:hover {
   background-color: #5a7481;
 }
 
+
+/* Logo Styling */
+.logo {
+  width: 150px;  /* Adjust the size of your logo */
+  height: auto;   /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center the logo */
+}
+
 /* Mobile-Friendly Design */
 @media screen and (max-width: 768px) {
   .container {
