@@ -48,6 +48,7 @@ body {
   font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  margin: 0.5rem; /* Added margin for spacing between buttons */
 }
 
 .cta-btn:hover {
@@ -82,6 +83,14 @@ body {
   max-width: 900px;
   margin: 0 auto;
   line-height: 1.6;
+}
+
+.about-section img {
+  width: 100%; /* Ensure the image takes up full width */
+  max-width: 400px; /* Keep it responsive */
+  height: auto;
+  margin: 0 auto;
+  display: block; /* Ensures centering */
 }
 
 /* Services Section */
@@ -151,6 +160,7 @@ body {
   font-weight: bold;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  margin-top: 1rem; /* Added margin for spacing */
 }
 
 .service-item .buy-btn:hover {
@@ -349,5 +359,10 @@ body {
   .cta-btn {
     padding: 1rem 2rem;
     font-size: 1rem;
+  }
+
+  .about-section img {
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
