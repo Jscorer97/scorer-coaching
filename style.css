@@ -383,51 +383,38 @@ body {
 }
 /* From Uiverse.io by satyamchaudharydev */
 .card {
-  width: 240px;
-  height: auto; /* Remove fixed height to adjust according to content */
-  min-height: 300px; /* Minimum height to ensure the content has enough space */
-  padding: 20px; /* Add some padding inside for spacing */
+  width: 300px; /* Increase width */
+  height: 320px; /* Increase height */
+  padding: 0 20px; /* Increase padding for more space inside the card */
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Align content to the top to avoid overflow */
+  justify-content: center;
   flex-direction: column;
-  gap: 12px;
+  gap: 15px; /* Increase the gap between elements */
   background: #f0f0f0; /* Light gray background for the card */
   border-radius: 20px;
   margin: auto;
-  overflow: hidden; /* Prevents text from spilling out */
-}
-
-.card > * {
-  margin: 0;
 }
 
 .card__title {
-  font-size: 23px;
-  font-weight: 900;
+  font-size: 26px; /* Increase title font size */
+  font-weight: bold; /* Make title bold */
   color: #333;
 }
 
 .card__content {
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 16px; /* Increase content font size */
+  line-height: 22px; /* Increase line height for better readability */
   color: #333;
-  overflow-wrap: break-word; /* Ensure content wraps correctly */
-}
-
-.card__form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 
 .card__form input {
-  margin-top: 10px;
+  margin-top: 10px; /* Keep existing margin top */
   outline: 0;
-  background: rgb(255, 255, 255); /* White background for the inputs */
+  background: rgb(255, 255, 255);
   box-shadow: transparent 0px 0px 0px 1px inset;
-  padding: 0.6em;
+  padding: 0.8em;
   border-radius: 14px;
   border: 1px solid #333;
   color: black;
@@ -437,11 +424,39 @@ body {
   border: 0;
   background: #555; /* Darker button background */
   color: #fff;
-  padding: 0.68em;
+  padding: 0.8em;
   border-radius: 14px;
   font-weight: bold;
+  font-size: 16px; /* Increase button font size */
+  margin-top: 12px; /* Add a small gap between the input and button */
 }
+
+
 
 .sign-up:hover {
   opacity: 0.8;
 }
+.service-item {
+  position: relative; /* Make the service item relative for absolute positioning inside it */
+  padding-bottom: 40px; /* Add some padding at the bottom to make room for the price */
+}
+
+.service-item {
+  position: relative; /* Make the service item relative for absolute positioning inside it */
+  padding-bottom: 50px; /* Add more padding at the bottom to give space for the price */
+}
+
+.service-price {
+  font-size: 24px; /* Increase font size */
+  font-weight: bold; /* Make it bold */
+  color: #000; /* Change the color to black */
+  text-align: center; /* Center the text */
+  margin-top: 10px; /* Space between the description and price */
+  position: absolute; /* Position it at the bottom of the service item */
+  bottom: 10px; /* 10px from the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Perfect centering */
+}
+
+
+
