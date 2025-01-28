@@ -101,11 +101,14 @@ body {
 }
 
 .about-section img {
-  width: 100%; /* Ensure the image takes up full width */
-  max-width: 400px; /* Keep it responsive */
+
+  width: 100%;
   height: auto;
-  margin: 0 auto;
-  display: block; /* Ensures centering */
+  aspect-ratio: 16 / 9; /* New CSS property for maintaining 16:9 ratio */
+  object-fit: cover; /* Ensures the image fills the container without distortion */
+  border-radius: 10px; /* Optional: rounds the corners for a nice effect */
+}
+
 }
 
 /* Services Section */
