@@ -460,6 +460,128 @@ body {
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Perfect centering */
 }
+.back-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text */
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 20px;
+}
 
+.back-btn:hover {
+  background-color: #555; /* Lighter background on hover */
+}
+/* Ensuring the Service Item Styles are Consistent */
+.service-item {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.service-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* If You Want to Differentiate the Pricing More */
+.service-price {
+  color: #e74c3c; /* A red color to make it stand out */
+  font-size: 28px;
+  margin-top: 15px;
+}
+
+.cta-btn.buy-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.cta-btn.buy-btn:hover {
+  background-color: #555;
+}
+
+/* Fixing price and button overlap */
+.service-item {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.service-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 15px; /* Add more space between the price and the button */
+}
+
+/* Add border to Gold Package */
+.gold-package {
+  border: 2px solid #f39c12; /* Gold color border to highlight the package */
+  background-color: #fef3e1; /* Light goldish background for emphasis */
+  padding: 25px; /* Extra padding for better spacing */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Optional: More emphasis with shadow */
+}
+
+.service-item .cta-btn.buy-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 10px; /* Add space between price and button */
+}
+
+.service-item .cta-btn.buy-btn:hover {
+  background-color: #555;
+}
+
+/* Price Styling (Make it more visible) */
+.service-price {
+  color: #e74c3c; /* Bright color for price */
+  font-size: 28px; /* Make the price bigger */
+  margin-top: 15px;
+}
+
+/* Add hover effect for each service item */
+.service-item:hover {
+  background-color: #f8f8f8; /* Subtle background color change on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cta-btn.buy-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.cta-btn.buy-btn:hover {
+  background-color: #555;
+}
 
 
