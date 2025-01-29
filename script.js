@@ -32,3 +32,31 @@ document.addEventListener('DOMContentLoaded', function () {
     autoplaySpeed: 3000
   });
 });
+let currentIndex = 0;
+const carouselItems = document.querySelectorAll('.testimonial');
+const carouselWrapper = document.querySelector('.testimonials-carousel');
+const totalItems = carouselItems.length;
+
+// Function to move the carousel
+function moveCarousel() {
+  carouselWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+// Function to go to the next slide
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % totalItems; // Loop back to the first slide after the last one
+  moveCarousel();
+}
+
+// Function to go to the previous slide
+function prevSlide() {
+  currentIndex = (currentIndex - 1 + totalItems) % totalItems; // Loop back to the last slide
+  moveCarousel();
+}
+
+// Automatically move the carousel every 5 seconds
+setInterval(nextSlide, 5000);
+
+// Event listeners for the navigation buttons
+document.querySelector('.carousel-next').addEventListener('click', nextSlide);
+document.querySelector('.carousel-prev').addEventListener('click', prevSlide);
