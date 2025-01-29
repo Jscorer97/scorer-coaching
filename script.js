@@ -60,3 +60,7 @@ setInterval(nextSlide, 5000);
 // Event listeners for the navigation buttons
 document.querySelector('.carousel-next').addEventListener('click', nextSlide);
 document.querySelector('.carousel-prev').addEventListener('click', prevSlide);
+// Auto slide every 4 seconds
+setInterval(function() {
+  document.querySelector('.carousel-next').click();
+}, 4000);
