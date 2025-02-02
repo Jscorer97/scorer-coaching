@@ -669,3 +669,86 @@ body {
     max-width: 200px;
   }
 }
+/* Table Styling */
+.coaching-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.coaching-table th, .coaching-table td {
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+.coaching-table th {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+.coaching-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.coaching-table tbody td:first-child {
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Button Styling */
+.cta-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  max-width: 250px;
+  font-size: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #218838;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .coaching-table {
+    display: block;
+    width: 100%;
+  }
+  
+  .coaching-table thead {
+    display: none;
+  }
+
+  .coaching-table tbody tr {
+    display: block;
+    margin-bottom: 15px;
+    border: none;
+  }
+
+  .coaching-table tbody td {
+    display: block;
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .coaching-table tbody td:first-child {
+    font-weight: bold;
+  }
+
+  .cta-btn {
+    max-width: 100%;
+    padding: 12px 20px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
