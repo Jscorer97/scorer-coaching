@@ -197,10 +197,36 @@ body {
   text-align: center;
 }
 
+.testimonials-carousel-container {
+  position: relative;
+}
+
 .testimonials-carousel {
-  max-width: 800px;
-  margin: 0 auto;
+  display: flex;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch; /* This makes it swipeable on mobile */
+  scroll-snap-type: x mandatory; /* Makes images snap to a fixed position */
+  gap: 10px; /* Space between testimonials */
+}
+
+.testimonial {
+  flex: 0 0 auto;
+  width: 90%; /* Set width of each testimonial */
+  scroll-snap-align: start; /* Ensures proper snapping */
   text-align: center;
+}
+
+.testimonial-images {
+  display: flex;
+  justify-content: center;
+  gap: 8px; /* Reduced gap between images */
+}
+
+.testimonial-images img {
+  width: 120px; /* Fixed width */
+  height: 120px; /* Fixed height */
+  object-fit: cover; /* Keeps aspect ratio while filling the box */
+  border-radius: 8px;
 }
 
 .testimonial blockquote {
@@ -211,6 +237,33 @@ body {
 
 .testimonial p {
   font-weight: bold;
+}
+
+/* Arrow Controls */
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* FAQ Section */
