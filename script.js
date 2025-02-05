@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000
   });
 });
@@ -53,9 +53,6 @@ function prevSlide() {
   currentIndex = (currentIndex - 1 + totalItems) % totalItems; // Loop back to the last slide
   moveCarousel();
 }
-
-// Automatically move the carousel every 5 seconds
-setInterval(nextSlide, 5000);
 
 // Event listeners for the navigation buttons
 document.querySelector('.carousel-next').addEventListener('click', nextSlide);
