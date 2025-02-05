@@ -669,3 +669,108 @@ body {
     max-width: 200px;
   }
 }
+
+/* Coaching Packages Section */
+.coaching-packages-section {
+  background-color: #fff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.coaching-packages-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.coaching-packages-section .section-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.coaching-packages-section .section-description {
+  font-size: 1.2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.package-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.package-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.package-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.package-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.package-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.package-price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e74c3c;
+  margin-bottom: 1.5rem;
+}
+
+.package-card .cta-btn.buy-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #ff5a5f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.package-card .cta-btn.buy-btn:hover {
+  background-color: #d84e51;
+}
+
+/* Highlighted Gold Package */
+.gold-package {
+  border: 2px solid #f39c12;
+  background-color: #fef3e1;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.gold-package .package-price {
+  color: #f39c12;
+}
+
+@media (max-width: 768px) {
+  .package-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .package-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
