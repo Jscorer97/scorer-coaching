@@ -211,7 +211,8 @@ body {
 
 .testimonial {
   flex: 0 0 auto;
-  width: 90%; /* Set width of each testimonial */
+  width: 80%; /* Set width of each testimonial */
+  min-width: 250px; /* Ensure there's a minimum width for each testimonial */
   scroll-snap-align: start; /* Ensures proper snapping */
   text-align: center;
 }
