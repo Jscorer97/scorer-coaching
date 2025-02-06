@@ -37,7 +37,7 @@ body {
   flex-direction: column;  /* Stack logo, heading, and buttons vertically */
   justify-content: center;  /* Center the content vertically within the container */
   align-items: center;  /* Center the content horizontally */
-  width: 100%;  /* Make sure the container takes up full width */
+  width: 95%;  /* Make sure the container takes up full width */
   text-align: center;  /* Center text */
 }
 
@@ -827,11 +827,3 @@ body {
     grid-template-columns: 1fr;
   }
 }
-.hero {
-  padding: 20px; /* Add padding around the header section */
-}
-
-.container {
-  padding: 20px; /* Optional: Adds padding inside the container */
-}
-
