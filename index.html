@@ -174,18 +174,93 @@
   </div>
 </section>
 
-<!-- Contact Form Section -->
-<section id="contact" class="section contact-section">
-  <div class="card">
-    <span class="card__title">Daily Free Fitness Advice</span>
-    <p class="card__content">Enter your email, and I will send you one piece of fitness advice every day completely free!</p>
+<section class="calorie-calculator">
+  <div class="container">
+    <h2>Calorie Calculator</h2>
+    <p>Find out how many calories you need to achieve your fitness goals.</p>
 
-    <div class="card__form">
-        <input placeholder="Your Email" type="text">
-        <button class="sign-up"> Sign up</button>
+    <form id="calorieForm">
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" required />
+      </div>
+
+      <div class="form-group">
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" required />
+      </div>
+
+      <div class="form-group">
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" required />
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="activityLevel">Activity Level:</label>
+        <select id="activityLevel" required>
+          <option value="1.2">Sedentary (little or no exercise)</option>
+          <option value="1.375">Lightly Active (light exercise 1-3 days/week)</option>
+          <option value="1.55">Moderately Active (moderate exercise 3-5 days/week)</option>
+          <option value="1.725">Very Active (hard exercise 6-7 days a week)</option>
+          <option value="1.9">Extra Active (very hard exercise or physical job)</option>
+        </select>
+      </div>
+
+      <button type="submit" class="cta-btn">Calculate</button>
+    </form>
+
+    <div id="result" class="result">
+      <h3>Your Daily Calorie Requirement:</h3>
+      <p id="calories"></p>
+      <p id="deficit-tip" class="tip"></p>
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('calorieForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      let age = parseInt(document.getElementById('age').value);
+      let weight = parseInt(document.getElementById('weight').value);
+      let height = parseInt(document.getElementById('height').value);
+      let gender = document.getElementById('gender').value;
+      let activityLevel = parseFloat(document.getElementById('activityLevel').value);
+
+      if (isNaN(age) || isNaN(weight) || isNaN(height)) {
+        alert('Please fill in all fields');
+        return;
+      }
+
+      let bmr;
+      if (gender === 'male') {
+        bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age);
+      } else {
+        bmr = 447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age);
+      }
+
+      let calories = bmr * activityLevel;
+
+      document.getElementById('calories').innerText = `Your daily calorie requirement is ${Math.round(calories)} calories.`;
+      
+      // Adding tip for calorie deficit
+      let deficitTip = "To lose weight, aim for a calorie deficit by consuming fewer calories than your daily requirement. A safe deficit is usually 500-750 calories per day for steady weight loss.";
+      document.getElementById('deficit-tip').innerText = deficitTip;
+
+      document.getElementById('result').style.display = 'block';
+    });
+  });
+</script>
+
 
 <!-- Footer Section -->
 <footer class="footer">
