@@ -827,4 +827,11 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.hero {
+  padding: 20px; /* Add padding around the header section */
+}
+
+.container {
+  padding: 20px; /* Optional: Adds padding inside the container */
+}
 
