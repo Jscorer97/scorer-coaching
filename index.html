@@ -180,19 +180,30 @@
     <p>Find out how many calories you need to achieve your fitness goals.</p>
 
     <form id="calorieForm">
+      <!-- Unit System Dropdown -->
+      <div class="form-group">
+        <label for="unitSystem">Unit System:</label>
+        <select id="unitSystem" required>
+          <option value="metric">Metric (kg, cm)</option>
+          <option value="imperial">Imperial (lbs, ft/inches)</option>
+        </select>
+      </div>
+
       <div class="form-group">
         <label for="age">Age:</label>
         <input type="number" id="age" required />
       </div>
 
       <div class="form-group">
-        <label for="weight">Weight (kg):</label>
+        <label for="weight">Weight:</label>
         <input type="number" id="weight" required />
+        <span id="weightUnit">kg</span>
       </div>
 
       <div class="form-group">
-        <label for="height">Height (cm):</label>
+        <label for="height">Height:</label>
         <input type="number" id="height" required />
+        <span id="heightUnit">cm</span>
       </div>
 
       <div class="form-group">
@@ -227,6 +238,21 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
+    // Function to handle unit system change
+    document.getElementById('unitSystem').addEventListener('change', function () {
+      const unitSystem = document.getElementById('unitSystem').value;
+      if (unitSystem === 'imperial') {
+        // Change the unit labels to imperial
+        document.getElementById('weightUnit').innerText = 'lbs';
+        document.getElementById('heightUnit').innerText = 'inches';
+      } else {
+        // Change the unit labels to metric
+        document.getElementById('weightUnit').innerText = 'kg';
+        document.getElementById('heightUnit').innerText = 'cm';
+      }
+    });
+
+    // Handle form submission
     document.getElementById('calorieForm').addEventListener('submit', function (event) {
       event.preventDefault();
 
@@ -235,10 +261,17 @@
       let height = parseInt(document.getElementById('height').value);
       let gender = document.getElementById('gender').value;
       let activityLevel = parseFloat(document.getElementById('activityLevel').value);
+      let unitSystem = document.getElementById('unitSystem').value;
 
       if (isNaN(age) || isNaN(weight) || isNaN(height)) {
         alert('Please fill in all fields');
         return;
+      }
+
+      // Convert weight and height if the unit system is imperial
+      if (unitSystem === 'imperial') {
+        weight = weight / 2.205; // Convert pounds to kilograms
+        height = height * 2.54; // Convert inches to centimeters
       }
 
       let bmr;
@@ -251,7 +284,7 @@
       let calories = bmr * activityLevel;
 
       document.getElementById('calories').innerText = `Your daily calorie requirement is ${Math.round(calories)} calories.`;
-      
+
       // Adding tip for calorie deficit
       let deficitTip = "To lose weight, aim for a calorie deficit by consuming fewer calories than your daily requirement. A safe deficit is usually 500-750 calories per day for steady weight loss.";
       document.getElementById('deficit-tip').innerText = deficitTip;
@@ -260,6 +293,7 @@
     });
   });
 </script>
+
 
 
 <!-- Footer Section -->
