@@ -21,10 +21,11 @@ body {
 }
 
 /* Header Section */
+/* Header Section */
 .hero {
   background-color: #333;
   color: #fff;
-  padding: 4rem 0;
+  padding: 2rem 0;  /* Reduced padding to reduce space */
   display: flex;
   flex-direction: column;  /* Stack the content vertically */
   justify-content: space-between;  /* Space the elements out vertically */
@@ -51,7 +52,6 @@ body {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
 .cta-btn {
   display: inline-block;
   padding: 1rem 2rem;
