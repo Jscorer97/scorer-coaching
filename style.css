@@ -112,10 +112,13 @@ body {
 }
 
 /* Services Section */
+/* Services Section */
 .services-section {
   background-color: #e5e5e5;
-  padding: 4rem 0;
+  padding: 2rem 0;
   text-align: center;
+  transform: translateY(0); /* Ensure no vertical offset */
+  transition: transform 0.3s ease; /* Optional: Add a smooth transition */
 }
 
 .services-section h2 {
@@ -217,7 +220,7 @@ body {
   text-align: center;
 }
 
-.testimonial-images {
+.testimonial-images {ser
   display: flex;
   justify-content: center;
   gap: 8px; /* Reduced gap between images */
@@ -270,7 +273,9 @@ body {
 /* FAQ Section */
 .faq-section {
   background-color: #f9f9f9;
-  padding: 4rem 0;
+  padding: 2rem 0;
+  transform: translateY(0); /* Ensure no vertical offset */
+  transition: transform 0.3s ease; /* Optional: Add a smooth transition */
 }
 
 .faq-section h2 {
