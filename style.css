@@ -32,7 +32,23 @@ body {
   align-items: center;  /* Center the content horizontally */
   text-align: center;
 }
+/* Style for the top bar */
+.top-bar {
+  background-color: black; /* Dark background for the bar */
+  padding: 1px 0; /* Space above and below the logo */
+  width: 100%;
+  height: 100px;
+}
 
+.top-bar .container {
+  display: flex;
+  justify-content: center;
+}
+
+.top-bar .logo {
+  height: 65px; /* Adjust logo size */
+  width: auto;
+}
 .hero .container {
   display: flex;
   flex-direction: column;  /* Stack logo, heading, and buttons vertically */
