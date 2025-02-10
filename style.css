@@ -47,6 +47,11 @@ body {
 .top-bar .logo {
   height: 65px; /* Adjust logo size */
   width: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
 }
 .hero .container {
   display: flex;
