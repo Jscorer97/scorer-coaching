@@ -61,6 +61,16 @@ body {
   width: 95%;  /* Make sure the container takes up full width */
   text-align: center;  /* Center text */
 }
+.service-description ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.service-description li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
 
 .hero h1 {
   font-size: 2.5rem;
