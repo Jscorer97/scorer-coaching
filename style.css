@@ -24,52 +24,21 @@ body {
 .hero {
   background-color: #333;
   color: #fff;
-  padding: 2rem 0;  /* Reduced padding to reduce space */
+  padding: 4rem 0;
   display: flex;
   flex-direction: column;  /* Stack the content vertically */
   justify-content: space-between;  /* Space the elements out vertically */
   align-items: center;  /* Center the content horizontally */
   text-align: center;
 }
-/* Style for the top bar */
-.top-bar {
-  background-color: #121A1E; /* Dark background for the bar */
-  padding: 1px 0; /* Space above and below the logo */
-  width: 100%;
-  height: 75px;
-}
 
-.top-bar .container {
-  display: flex;
-  justify-content: center;
-}
-
-.top-bar .logo {
-  height: 65px; /* Adjust logo size */
-  width: auto;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-}
 .hero .container {
   display: flex;
   flex-direction: column;  /* Stack logo, heading, and buttons vertically */
   justify-content: center;  /* Center the content vertically within the container */
   align-items: center;  /* Center the content horizontally */
-  width: 95%;  /* Make sure the container takes up full width */
+  width: 100%;  /* Make sure the container takes up full width */
   text-align: center;  /* Center text */
-}
-.service-description ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.service-description li {
-  margin-bottom: 10px;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 .hero h1 {
@@ -82,6 +51,25 @@ body {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
+
+/* Style for the top bar */
+.top-bar {
+  background-color: black; /* Dark background for the bar */
+  padding: 1px 0; /* Space above and below the logo */
+  width: 100%;
+  height: 100px;
+}
+
+.top-bar .container {
+  display: flex;
+  justify-content: center;
+}
+
+.top-bar .logo {
+  height: 65px; /* Adjust logo size */
+  width: auto;
+}
+
 .cta-btn {
   display: inline-block;
   padding: 1rem 2rem;
@@ -142,13 +130,10 @@ body {
 }
 
 /* Services Section */
-/* Services Section */
 .services-section {
   background-color: #e5e5e5;
-  padding: 2rem 0;
+  padding: 4rem 0;
   text-align: center;
-  transform: translateY(0); /* Ensure no vertical offset */
-  transition: transform 0.3s ease; /* Optional: Add a smooth transition */
 }
 
 .services-section h2 {
@@ -173,7 +158,7 @@ body {
   background-color: #fff;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -250,7 +235,7 @@ body {
   text-align: center;
 }
 
-.testimonial-images {ser
+.testimonial-images {
   display: flex;
   justify-content: center;
   gap: 8px; /* Reduced gap between images */
@@ -303,9 +288,7 @@ body {
 /* FAQ Section */
 .faq-section {
   background-color: #f9f9f9;
-  padding: 2rem 0;
-  transform: translateY(0); /* Ensure no vertical offset */
-  transition: transform 0.3s ease; /* Optional: Add a smooth transition */
+  padding: 4rem 0;
 }
 
 .faq-section h2 {
@@ -863,114 +846,67 @@ body {
   }
 }
 
-/* Calorie Calculator Section */
 .calorie-calculator {
-  background-color: #fff;
-  padding: 4rem 0;
+  background-color: #f4f4f4;
+  padding: 40px 0;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
+}
+
+.calorie-calculator .container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .calorie-calculator h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: bold;
   color: #333;
 }
 
 .calorie-calculator p {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  color: #666;
 }
 
-.calorie-calculator form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
+.calorie-calculator .form-group {
+  margin-bottom: 15px;
+  text-align: left;
 }
 
 .calorie-calculator label {
-  font-size: 1.1rem;
-  font-weight: bold;
+  font-size: 1em;
   color: #333;
-  text-align: left;
-  width: 100%;
 }
 
-.calorie-calculator input,
-.calorie-calculator select {
+.calorie-calculator input, .calorie-calculator select {
   width: 100%;
-  padding: 1rem;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1em;
   border-radius: 5px;
-  border: 1px solid #ddd;
-  font-size: 1rem;
-  margin-bottom: 1rem;
+  border: 1px solid #ccc;
 }
 
 .calorie-calculator button {
-  background-color: #ff5a5f;
-  padding: 1rem 2rem;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
-  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
 .calorie-calculator button:hover {
-  background-color: #d84e51;
+  background-color: #0056b3;
 }
 
 .calorie-calculator .result {
-  margin-top: 2rem;
-  font-size: 1.2rem;
-  font-weight: bold;
+  margin-top: 30px;
+  font-size: 1.2em;
   color: #333;
-  text-align: center;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .calorie-calculator {
-    padding: 3rem 1rem;
-  }
-
-  .calorie-calculator h2 {
-    font-size: 2rem;
-  }
-
-  .calorie-calculator form {
-    gap: 1rem;
-  }
-
-  .calorie-calculator input,
-  .calorie-calculator select {
-    padding: 0.8rem;
-  }
-
-  .calorie-calculator button {
-    padding: 0.8rem 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .calorie-calculator {
-    padding: 2rem 1rem;
-  }
-
-  .calorie-calculator h2 {
-    font-size: 1.8rem;
-  }
-
-  .calorie-calculator input,
-  .calorie-calculator select {
-    padding: 0.8rem;
-  }
-
-  .calorie-calculator button {
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-  }
+  display: none;
 }
