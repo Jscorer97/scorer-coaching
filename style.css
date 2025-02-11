@@ -53,8 +53,6 @@ body {
     transform: translateX(-50%);
 }
 }
-
-
 .hero .container {
   display: flex;
   flex-direction: column;  /* Stack logo, heading, and buttons vertically */
