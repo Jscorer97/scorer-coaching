@@ -4,6 +4,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 
 body {
   font-family: 'Arial', sans-serif;
@@ -52,14 +57,14 @@ body {
   margin-bottom: 2rem;
 }
 
-/* Style for the top bar */
-/* Style for the top bar */
 .top-bar {
-  background-color: #000033; /* Dark background for the bar */
+  background-color: #000a1a; /* Dark background for the bar */
   padding: 0; /* Remove any padding around the top bar */
   width: 100%;
   height: 75px;
   margin: 0; /* Ensure there's no extra space around the bar */
+  position: absolute; /* Pin the bar to the top */
+  top: 0;
 }
 
 .top-bar .container {
@@ -73,7 +78,6 @@ body {
   padding: 0; /* Remove padding from the logo */
   margin: 0; /* Ensure there's no margin around the logo */
 }
-
 
 
 .cta-btn {
