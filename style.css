@@ -61,7 +61,7 @@ body {
   background-color: #000a1a; /* Dark background for the bar */
   padding: 0; /* Remove any padding around the top bar */
   width: 100%;
-  height: 75px;
+  height: 100px;
   margin: 0; /* Ensure there's no extra space around the bar */
   position: absolute; /* Pin the bar to the top */
   top: 0;
