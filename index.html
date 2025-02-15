@@ -192,7 +192,12 @@
     <form id="calorieForm">
       <!-- Unit System Dropdown -->
       <div class="form-group">
-    
+        <label for="unitSystem">Unit System:</label>
+        <select id="unitSystem" required>
+          <option value="metric">Metric (kg, cm)</option>
+          <option value="imperial">Imperial (lbs, inches)</option>
+        </select>
+      </div>
 
       <div class="form-group">
         <label for="age">Age:</label>
@@ -233,7 +238,7 @@
       <button type="submit" class="cta-btn">Calculate</button>
     </form>
 
-    <div id="result" class="result">
+    <div id="result" class="result" style="display:none;">
       <h3>Your Daily Calorie Requirement:</h3>
       <p id="calories"></p>
       <p id="deficit-tip" class="tip"></p>
