@@ -123,15 +123,23 @@ body {
   line-height: 1.6;
 }
 
-.about-section img {
 
+
+.about-section img {
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9; /* New CSS property for maintaining 16:9 ratio */
+  aspect-ratio: 16 / 9; /* Maintains 16:9 ratio */
   object-fit: cover; /* Ensures the image fills the container without distortion */
   border-radius: 10px; /* Optional: rounds the corners for a nice effect */
 }
 
+/* Media query for larger screens (PCs, tablets in landscape mode) */
+@media (min-width: 768px) {
+  .about-section img {
+    width: 80%; /* Reduces the width on larger screens */
+    margin: 0 auto; /* Centers the image */
+  }
+}
 }
 
 /* Services Section */
