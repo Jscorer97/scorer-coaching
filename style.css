@@ -136,7 +136,7 @@ body {
 /* Media query for larger screens (PCs, tablets in landscape mode) */
 @media (min-width: 768px) {
   .about-section img {
-    width: 80%; /* Reduces the width on larger screens */
+    width: 65%; /* Reduces the width on larger screens */
     margin: 0 auto; /* Centers the image */
   }
 }
