@@ -69,7 +69,7 @@ body {
 
 .top-bar .logo {
   height: 100px; /* Adjust logo size */
-  width: 100px;
+  width: 129px;
   padding: 0; /* Remove padding from the logo */
   margin: 0; /* Ensure there's no margin around the logo */
 }
@@ -98,8 +98,8 @@ body {
 
 /* Logo Section */
 .logo {
-  width: 200px;  /* Adjust logo size */
-  height: 200px;
+  width: 193px;  /* Adjust logo size */
+  height: 150px;
   margin-right: 2rem; /* Added margin for spacing between logo and text */
 }
 
