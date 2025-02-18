@@ -68,7 +68,7 @@ body {
 }
 
 .top-bar .logo {
-  height: 65px; /* Adjust logo size */
+  height: 200px; /* Adjust logo size */
   width: auto;
   padding: 0; /* Remove padding from the logo */
   margin: 0; /* Ensure there's no margin around the logo */
