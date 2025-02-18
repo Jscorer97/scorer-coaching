@@ -98,8 +98,8 @@ body {
 
 /* Logo Section */
 .logo {
-  width: 500px;  /* Adjust logo size */
-  height: 500px;
+  width: 200px;  /* Adjust logo size */
+  height: auto;
   margin-right: 2rem; /* Added margin for spacing between logo and text */
 }
 
