@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Jamie Scorer Personal Training offers tailored fitness coaching, including online and in-person workout sessions.">
+  <meta name="keywords" content="personal trainer, fitness coach, gym, workout, training, Jamie Scorer, South Shields, PT, weightloss">
+  <meta name="author" content="Jamie Scorer">
+  <title>Jamie Scorer Personal Training</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Top Bar for Logo -->
+<div class="top-bar">
+  <div class="container">
+    <img src="PT logo3.png" alt="Jamie Scorer Personal Training Logo" class="logo">
+  </div>
+</div>
+
+<!-- Header Section --><br>
+
+<style>
+  .tight-p {
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+</style>
+
+<header class="hero">
+  <div class="container">
+    <br>
+    <h1>Have a Free Trial on Us!</h1>
+    <p class="tight-p">We’re more than happy to offer you a free personal training session — no pressure, no catch. Just a chance to come in, meet me, and see if it’s a good fit.</p>
+
+    <p class="tight-p">If you’ve been meaning to get started, this is your sign. One free session to see what proper support and guidance feels like.</p>
+    <!-- Google Form Button -->
+    <div class="cta-btn-container" style="margin: 25px 0;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfyJW6fTzg--68zyKJyVFe6blWFpkxKiaiRNP-OjpvWv4KfDA/viewform?usp=dialog" target="_blank" class="cta-btn">Claim Your Free Trial</a>
+    </div>
+
+    <p class="tight-p"><strong>Location:</strong> 1 Queen Street, South Shields, NE33 1HL</p>
+
+    <p class="tight-p">Pop your details in and I’ll personally get in touch to book your session.</p>
+
+    <p class="tight-p">Jamie – Scorer Coaching</p>
+  </div>
+</header>
+
+
+<!-- Combined Services & Training Process Section 
+<section id="services" class="section services-section">
+  <div class="container">
+    <h2>My Services</h2>
+    <p>Take a look at the services I offer and the training process that will help you achieve your fitness goals. I combine personalised plans, expert guidance, and a variety of training options to fit your needs:</p>
+    <div class="services-list">
+      <div class="service-item">
+        <img src="1 to 1 cover.jpeg" alt="Personalized Workout Session">
+        <h3>1 to 1 Coaching</h3>
+        
+        <p class="service-description">Tailored, one-on-one sessions that focus entirely on your individual needs and fitness goals. Whether you're starting your fitness journey or looking to push past plateaus, we'll create a plan that ensures consistent progress and results.</p>
+        <a href="coaching.html" class="cta-btn buy-btn">Buy Now</a>
+        <p/>from £185
+      </div>
+      <!--
+      <div class="service-item">
+        <img src="https://placehold.co/400" alt="Group Training Class">
+        <h3>Hybrid Coaching</h3>
+
+        <p class="service-description">Join a motivated group of like-minded individuals in our dynamic group training sessions. These workouts combine fun, intensity, and support from others, pushing you to achieve more than you ever thought possible—all while keeping it social and supportive.</p>
+        <button class="toggle-description">Read More</button>
+        <a href="https://buy.stripe.com/4gwbLB2yqdxud20eUV" class="cta-btn buy-btn">Buy Now</a>
+      </div>
+      -->
+     <!-- <div class="service-item">
+        <img src="online cover temp.jpg" alt="Online Training Support">
+        <h3>Online Coaching</h3>
+<p class="service-description">Get expert guidance online from your phone, with tailored training programs and nutrition plans to help you achieve your goals, as well as support through weekly check-ins. Perfect for those with a busy schedule or who prefer the flexibility of training in their own time.</p>
+        <a href="https://buy.stripe.com/5kAdTJeh850Yfa8fZ0" class="cta-btn buy-btn">Buy Now</a>
+        <p>£125pm</p>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+<section id="testimonials" class="section testimonials-section">
+  <div class="container">
+    <h2>Success story</h2>
+    <h3>Swipe you see our world class results</h3>
+    <div class="testimonials-carousel-container">
+      <div class="testimonials-carousel">
+        <div class="testimonial">
+          <div class="testimonial-images">
+            <img src="elliot before side.jpeg" alt="Client Transformation 1" />
+            <img src="elliot after side.jpeg" alt="Client Transformation 2" />
+          </div>
+          <blockquote>"Jamie’s approach to training is fantastic. He really listens to my goals and tailors everything to my needs. I’ve seen incredible results!"</blockquote>
+          <p>- Elliott, Client | 70lbs+ lost</p>
+        </div>
+        
+        <div class="testimonial">
+          <div class="testimonial-images">
+            <img src="chris before side.jpeg" alt="Client Transformation 3" />
+            <img src="chris after side.jpeg" alt="Client Transformation 4" />
+          </div>
+          <blockquote>"Working with Jamie has been life-changing. He’s not only a great trainer, but a huge motivator as well. I feel stronger and healthier than ever!"</blockquote>
+          <p>- Client</p>
+        </div>
+
+ <div class="testimonial">
+          <div class="testimonial-images">
+            <img src="lewis before.jpeg" alt="Client Transformation 11" />
+            <img src="lewis after side.jpeg" alt="Client Transformation 12" />
+          </div>
+          <blockquote>"I’ve made more progress with Jamie than I ever thought possible. His expert guidance has made all the difference in my fitness journey!"</blockquote>
+          <p>- Lewis, Client | 70lbs+ lost</p>
+        </div>
+        
+        <div class="testimonial">
+          <div class="testimonial-images">
+            <img src="me before.jpeg" alt="Client Transformation 5" />
+            <img src="me after.jpeg" alt="Client Transformation 6" />
+          </div>
+<blockquote>"As a good coach, it is so important to practice what you preach, and give solid professional advice from a place of experience, as well as through education."</blockquote>
+          <p>- me</p>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial-images">
+            <img src="mannix before back.jpeg" alt="Client Transformation 7" />
+            <img src="mannix after back.jpeg" alt="Client Transformation 8" />
+          </div>
+          <blockquote>"I’ve never been in better shape! Jamie’s program is effective, fun, and tailored to my exact needs. The results speak for themselves."
+</blockquote>
+          <p>- Thomas, Client</p>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-images">
+            <img src="connor before front.png" alt="Client Transformation 9" />
+            <img src="Connor after.png" alt="Client Transformation 10" />
+          </div>
+          <blockquote>"Jamie’s knowledge and motivation have been key in helping me achieve my fitness goals. I couldn’t have done it without him!"</blockquote>
+          <p>- Connor, Client | 30lbs+ lost</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- About Me Section -->
+<section id="about" class="section about-section">
+  <div class="container">
+    <h2>What's included in the programme</h2>
+    <h3>Here's a quick video breakdown of the programme to see if it's a good fit for you</h3>
+    <br>
+    <!-- Embed Video here -->
+<video width="100%" autoplay loop playsinline controls>
+  <source src="VSA.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+        <div class="cta-btn-container" style="margin: 25px 0;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfyJW6fTzg--68zyKJyVFe6blWFpkxKiaiRNP-OjpvWv4KfDA/viewform?usp=dialog" target="_blank" class="cta-btn">Claim Your Free Trial</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FAQ Section -->
+<section id="faq" class="section faq-section">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <button class="faq-question">What can I expect from your personal training program?
+
+</button>
+      <div class="faq-answer">
+        <p>My program offers personalised training plans, nutrition guidance, and weekly check-ins to ensure you stay on track. It’s designed to be flexible and adaptable to your schedule and fitness level, helping you achieve your specific goals effectively.
+</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">How is the training plan tailored to my needs?</button>
+      <div class="faq-answer">
+        <p>The training plan is customised based on your goals, fitness level, preferences, and any specific challenges you may have. Whether you're looking to lose weight, build muscle, or improve overall fitness, the plan is designed to work for you and adjust as you progress.
+</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">How do the weekly check-ins work?</button>
+      <div class="faq-answer">
+        <p>Weekly check-ins provide an opportunity to review your progress, discuss any challenges, and make adjustments to your programme if needed. This helps to keep you accountable and ensures you stay motivated and on the right track toward your goals.
+</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="calorie-calculator">
+  <div class="container">
+    <h2>Calorie Calculator</h2>
+    <p>Find out how many calories you need to achieve your fitness goals.</p>
+
+    <form id="calorieForm">
+      <!-- Unit System Dropdown -->
+      <div class="form-group">
+        <label for="unitSystem">Unit System:</label>
+        <select id="unitSystem" required>
+          <option value="metric">Metric (kg, cm)</option>
+          <option value="imperial">Imperial (lbs, inches)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" required />
+      </div>
+
+      <div class="form-group">
+        <label for="weight">Weight:</label>
+        <input type="number" id="weight" required />
+        <span id="weightUnit">kg</span>
+      </div>
+
+      <div class="form-group">
+        <label for="height">Height:</label>
+        <input type="number" id="height" required />
+        <span id="heightUnit">cm</span>
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="activityLevel">Activity Level:</label>
+        <select id="activityLevel" required>
+          <option value="1.2">Sedentary (little or no exercise)</option>
+          <option value="1.375">Lightly Active (light exercise 1-3 days/week)</option>
+          <option value="1.55">Moderately Active (moderate exercise 3-5 days/week)</option>
+          <option value="1.725">Very Active (hard exercise 6-7 days a week)</option>
+          <option value="1.9">Extra Active (very hard exercise or physical job)</option>
+        </select>
+      </div>
+
+      <button type="submit" class="cta-btn">Calculate</button>
+    </form>
+
+    <div id="result" class="result" style="display:none;">
+      <h3>Your Daily Calorie Requirement:</h3>
+      <p id="calories"></p>
+      <p id="deficit-tip" class="tip"></p>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Function to handle unit system change
+    document.getElementById('unitSystem').addEventListener('change', function () {
+      const unitSystem = document.getElementById('unitSystem').value;
+      if (unitSystem === 'imperial') {
+        // Change the unit labels to imperial
+        document.getElementById('weightUnit').innerText = 'lbs';
+        document.getElementById('heightUnit').innerText = 'inches';
+      } else {
+        // Change the unit labels to metric
+        document.getElementById('weightUnit').innerText = 'kg';
+        document.getElementById('heightUnit').innerText = 'cm';
+      }
+    });
+
+    // Handle form submission
+    document.getElementById('calorieForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      let age = parseInt(document.getElementById('age').value);
+      let weight = parseInt(document.getElementById('weight').value);
+      let height = parseInt(document.getElementById('height').value);
+      let gender = document.getElementById('gender').value;
+      let activityLevel = parseFloat(document.getElementById('activityLevel').value);
+      let unitSystem = document.getElementById('unitSystem').value;
+
+      if (isNaN(age) || isNaN(weight) || isNaN(height)) {
+        alert('Please fill in all fields');
+        return;
+      }
+
+      // Convert weight and height if the unit system is imperial
+      if (unitSystem === 'imperial') {
+        weight = weight / 2.205; // Convert pounds to kilograms
+        height = height * 2.54; // Convert inches to centimeters
+      }
+
+      let bmr;
+      if (gender === 'male') {
+        bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age);
+      } else {
+        bmr = 447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age);
+      }
+
+      let calories = bmr * activityLevel;
+
+      document.getElementById('calories').innerText = `Your daily calorie requirement is ${Math.round(calories)} calories.`;
+
+      // Adding tip for calorie deficit
+      let deficitTip = "To lose weight, aim for a calorie deficit by consuming fewer calories than your daily requirement. A safe deficit is usually 500-750 calories per day for steady weight loss.";
+      document.getElementById('deficit-tip').innerText = deficitTip;
+
+      document.getElementById('result').style.display = 'block';
+    });
+  });
+</script>
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 Jamie Scorer Personal Training. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a>
+      <a href="https://www.twitter.com/yourprofile" target="_blank">Twitter</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
